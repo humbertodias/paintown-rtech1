@@ -7,3 +7,5 @@ lib
 bin
 config
 temp
+.idea
+cmake-build-debug

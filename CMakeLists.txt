@@ -5,17 +5,19 @@
 # Written by: juvinious
 # -------------------------------------------------------
 
+cmake_minimum_required(VERSION 3.7)
 # -------------------------------------------------------
 # project name
 # -------------------------------------------------------
 project (r-tech1 C CXX)
-
+set(CMAKE_CXX_STANDARD 98)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSION OFF)
 # -------------------------------------------------------
 # Ensure that we are doing an out of source build
 # Prevents any mishaps
 # Also remove the makefile to regenerate the filelist
 # -------------------------------------------------------
-cmake_minimum_required(VERSION 2.6)
 if(EXISTS ${CMAKE_SOURCE_DIR}/CMakeCache.txt)
 	file(REMOVE ${CMAKE_SOURCE_DIR}/CMakeCache.txt)
 	file(REMOVE_RECURSE ${CMAKE_SOURCE_DIR}/CMakeFiles)
